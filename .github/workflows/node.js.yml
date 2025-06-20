@@ -40,7 +40,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ MY_DNS_HOST_KEY }}
-          username: ec2-user
+          username: ubuntu
           key: ${{ MY_EC2_RSA_SECRET_KEY }}
           port: ${{ MY_PORT_KEY }}
           script: |
